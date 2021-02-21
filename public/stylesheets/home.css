@@ -1,0 +1,30 @@
+
+/* gold - > #ffdc20  */
+
+*{
+    margin:0;
+}
+
+.container{
+    height:100vh;
+    width:100%;
+    display: flex;
+}
+
+.container div:nth-child(1){
+    width:33%;
+    height:100%;
+    background-color:#ffffff;
+}
+
+.container div:nth-child(2){
+    width:33%;
+    height:100%;
+    background-color:#ffdc20;
+}
+
+.container div:nth-child(3){
+    width:33%;
+    height:100%;
+    background-color:black;
+}
