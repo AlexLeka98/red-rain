@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -64,29 +66,66 @@ html{
 }
 .navbar .menu-list{
   display: inline-flex;
+  overflow-y: hidden;
 }
 .menu-list li{
   list-style: none;
 }
+
 .menu-list li a{
-  color: #fff;
+  color: #f5d000;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 .menu-list li a:hover{
-  color: #007bff;
+  transform: rotate(25deg);
+  color: #fff9d4;
 }
 .banner{
+  position:relative;
   background: url("/football-field-night.jpg") no-repeat;
-  /* background-color:rgb(113, 107, 107); */
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+
+.intr{
+  position:absolute;
+  top:30%;
+  left:5%;
+  width: 100%;
+  background-color: #ffd70029;
+  padding: 30px;
+}
+
+.intr h1{
+  width:40%;
+  min-width: 400px;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 60px;
+  overflow:hidden;
+}
+
+.intr h1 span{
+  font-weight: 500;
+  font-style: italic;
+  font-size:70px;
+  color:#f0fb11;
+}
+
+.intr h1 p{
+  margin-top:30px;
+  font-size:15px;
+  line-height: 15px;
+  color:#ffffff;
+  overflow-y: hidden;
+}
+
 .about{
   padding: 30px 0;
 }
@@ -125,6 +164,10 @@ html{
   }
 }
 @media (max-width: 868px) {
+  .intr{
+    /* left:30%; */
+    width:90%;
+  }
   body.disabled{
     overflow: hidden;
   }

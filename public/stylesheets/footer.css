@@ -51,7 +51,7 @@ footer{
 }
 .socials a{
   text-decoration: none;
-  color: #fff09e;
+  color: #f5d000;
 }
 .socials a i{
   font-size: 1.1rem;
@@ -60,7 +60,7 @@ footer{
 }
 .socials a:hover i{
   transform: scale(1.7);
-  color: #ffdc20;
+  color: #fff9d4;
 }
 
 .footer-bottom{
