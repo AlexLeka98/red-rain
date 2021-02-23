@@ -45,7 +45,7 @@ html{
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding: 25px 0;
+  padding: 60px 0;
   transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -59,11 +59,20 @@ html{
   justify-content: space-between;
 }
 .navbar .logo a{
-  color: #fff;
+  /* color:#fff;
+  background-image: url("/logo1.png") no-repeat;
   font-size: 30px;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: none; */
+  display: block;
+  height:90px;
+  width:130px;
+  background-image: url("/logo-1.png");
+  background-size: cover;
+  background-position: center;
 }
+
+
 .navbar .menu-list{
   display: inline-flex;
   overflow-y: hidden;
@@ -176,6 +185,9 @@ html{
   }
   .icon.hide{
     display: none;
+  }
+  .navbar{
+    padding: 30px 0;
   }
   .navbar .menu-list{
     position: fixed;
