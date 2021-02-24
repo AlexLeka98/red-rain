@@ -45,7 +45,7 @@ html{
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding: 20px 0;
+  padding: 6px 0;
   transition: all 0.3s ease;
   background-color:rgba(0, 0, 0, 0.768);
 }
@@ -67,7 +67,8 @@ html{
   text-decoration: none; */
   display: block;
   height:90px;
-  width:130px;
+  width:120px;
+  margin-left:50px;
   background-image: url("/logo-1.png");
   background-size: cover;
   background-position: center;
@@ -309,7 +310,8 @@ html{
   opacity: 0;
   width: 600px;
   /* background-color: rgba(255, 255, 255, 0.8); */
-  background-color: #ffd900b1;
+  /* background-color: #ffd900b1; */
+  background-color: #000000c9;;
   color: #333;
   padding: 35px;
 }
@@ -317,10 +319,12 @@ html{
 .slide .content h1 {
   margin-bottom: 10px;
   color:#ffffff;
+  font-size:30px;
 }
 
 .slide .content p {
   color:#ffffff;
+  font-size:14px;
 }
 
 
@@ -333,19 +337,19 @@ html{
 
 .buttons button#next {
   position: absolute;
-  top: 40%;
+  top: 13%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 40%;
+  top: 15%;
   left: 15px;
 }
 
 .buttons button {
   border: 2px solid #fff;
-  background-color: transparent;
+  background-color: #c3c3c37d;
   color: #fff;
   cursor: pointer;
   /* padding: 13px 15px; */
@@ -384,20 +388,21 @@ html{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top:20px;
+  margin-top:5px;
   z-index: 3;
 }
 
 .button a {
-  font-size: 13px;
-  padding: 0.9rem 1.8rem;
-  color: #ffffff;
+  font-size: 10px;
+  padding: 0.8rem 1.8rem;
+  color: #cbae08;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .button .btn {
   text-decoration: none;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #cbae08;
   position: relative;
   overflow: hidden;
   transition:all 0.1s;
