@@ -35,6 +35,20 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
+app.get('/events', (req, res) => {
+    res.render('events');
+})
+
+app.get('/sports', (req, res) => {
+    res.render('sports');
+})
+
+
+app.get('/about', (req, res) => {
+    res.render('about');
+})
+
+
 
 
 app.listen(3000, () => {
