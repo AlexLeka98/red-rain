@@ -8,26 +8,55 @@
 
 
 /* Introduction Css */
-.introduction{
+.intro-wrapper{
   background-color:#d6d6d6;
   width:100%;
-  height:600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height:auto;
+  padding:50px 0;
+  background-color:rgb(210, 218, 165);
 }
 
-.introduction iframe{
-  display: flex;
-  top:20px;
-  height:500px;
-  width:800px;
+.intro-wrapper>h1 {
+  text-align:center;
+  padding:20px 0;
 }
 
-.introduction h1{
-  /* margin-left:15%; */
-  /* padding:10px; */
+.intro-wrapper .introduction{
+  width:100%;
+  height: 100%;
+  /* background-color:blue; */
+  display: flex;
+  /* flex-direction:column; */
 }
+
+.intro-wrapper .introduction .text{
+  width:45%;
+  height: 100%;
+  padding:40px;
+  background-color:rgb(210, 218, 165);
+}
+
+
+.intro-wrapper .introduction .text h1{
+  padding-bottom:20px;
+  font-size:40px;
+}
+
+
+
+.intro-wrapper .introduction .video-wrapper{
+  width:65%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper video{
+  width:100%;
+  height: 100%;
+}
+
+
 
 
 /*  === News Css === */
@@ -316,12 +345,6 @@
 
 
 
-
-
-
-
-
 .another-one{
-   
     margin-bottom: 47vh;
 }
