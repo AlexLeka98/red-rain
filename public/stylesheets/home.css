@@ -26,6 +26,7 @@
   height: 100%;
   /* background-color:blue; */
   display: flex;
+  align-items: center;
   /* flex-direction:column; */
 }
 
@@ -94,6 +95,7 @@
     height:auto;
     width:100%;
     background-color:rgb(106, 106, 106);
+    transition:all 3.3s;
 }
 
 .home-wrapper>h1{
@@ -336,6 +338,28 @@
 @media (max-width: 950px) {
     .blog-card{
         height:330px;
+    }
+    .intro-wrapper{
+      padding-bottom:0;
+      padding-top:20px;
+    }
+    .introduction{
+      flex-direction: column;
+    }
+    .intro-wrapper .introduction .text{
+      width:85%;
+      padding:0;
+      padding-bottom:30px;
+    }
+
+    .intro-wrapper .introduction .text h1{
+      font-size:32px;
+    }
+    .intro-wrapper .introduction .text p{
+      font-size:15px;
+    }
+    .intro-wrapper .introduction .video-wrapper{
+      width:100%;
     }
 }
 

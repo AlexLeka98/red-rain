@@ -51,7 +51,7 @@ html{
 }
 .navbar.sticky{
   background: #1b1b1b;
-  padding: 10px 0;
+  padding: 6px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
 .navbar .content{
@@ -189,7 +189,7 @@ html{
     display: none;
   }
   .navbar{
-    padding: 10px 0;
+    padding: 6px 0;
   }
   .navbar .menu-list{
     position: fixed;
@@ -471,3 +471,10 @@ html{
 
 
 
+
+
+
+.whole-container{
+  position:relative;
+  margin-bottom:338px;
+}

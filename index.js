@@ -48,6 +48,11 @@ app.get('/about', (req, res) => {
     res.render('about');
 })
 
+app.get('/talent-agency', (req, res) => {
+    res.render('./talent-agency/talent-agency');
+
+})
+
 
 
 
