@@ -49,7 +49,7 @@ app.get('/about', (req, res) => {
 })
 
 app.get('/talent-agency', (req, res) => {
-    res.render('./talent-agency/talent-agency');
+    res.render('./talent-agency/talent-agency2');
 
 })
 
