@@ -21413,7 +21413,7 @@ a.u-link.u-hover-palette-1-light-3:hover {
 .u-button-style.u-palette-1-base,
 .u-button-style.u-palette-1-base[class*="u-border-"] {
   color: #ffffff !important;
-  background-color: #478ac9 !important;
+  background-color: #ffe136 !important;
 }
 .u-button-style.u-palette-1-base:hover,
 .u-button-style.u-palette-1-base[class*="u-border-"]:hover,
@@ -21441,7 +21441,7 @@ a.u-button-style.u-button-style.u-active-palette-1-base[class*="u-border-"]:acti
 a.u-button-style.u-button-style.u-active-palette-1-base.active,
 a.u-button-style.u-button-style.u-active-palette-1-base[class*="u-border-"].active {
   color: #ffffff !important;
-  background-color: #478ac9 !important;
+  background-color: #ffe136 !important;
 }
 a.u-link.u-hover-palette-1-base:hover {
   color: #478ac9 !important;
