@@ -24,11 +24,13 @@
                                         src="">
                                         <div class="u-container-layout u-container-layout-1" src="">
                                             <img class="u-expand-resize u-expanded-width u-image u-image-1"
-                                                src="images/z.jpg">
+                                                src="/photo2.jpg">
                                         </div>
                                     </div>
                                     <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-2"
                                         src="">
+                                        <img class="u-expand-resize u-expanded-width u-image u-image-1"
+                                            src="/football-goalkeeper.jpg">
                                         <div class="u-container-layout u-container-layout-2" src=""></div>
                                     </div>
                                 </div>
@@ -40,8 +42,7 @@
                                         <div class="u-container-layout u-valign-top-xs u-container-layout-3 overfl"
                                             src="">
                                             <img class="u-expand-resize u-expanded-width u-image u-image-3"
-                                                data-image-width="1600" data-image-height="1067"
-                                                src="images/edfg-min.jpg">
+                                                data-image-width="1600" data-image-height="1067" src="/photo3.jpg">
                                             <div
                                                 class="u-align-center u-black u-container-style u-group u-group-1 overfl">
                                                 <div
@@ -50,10 +51,11 @@
                                                     <p class="u-text u-text-2">Sample text. Lorem ipsum dolor sit amet,
                                                         consectetur adipiscing elit
                                                         nullam nunc justo sagittis suscipit ultrices.</p>
-                                                    <a href="https://nicepage.com/wordpress-website-builder"
-                                                        class="u-active-white u-border-2 u-border-white u-btn u-button-style u-hover-white u-none u-text-active-black u-text-body-alt-color u-text-hover-black u-btn-1"><span
-                                                            class="u-icon"></span>&nbsp;learn more&nbsp;&nbsp;<span
-                                                            class="u-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    <a
+                                                        class="u-active-white u-border-2 u-btn u-button-style u-hover-white u-none u-text-active-black u-text-body-alt-color u-text-hover-black u-btn-1 borderColor toScroll"><span
+                                                            class="u-icon "></span>&nbsp;learn
+                                                        more&nbsp;&nbsp;<span class="u-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg"
                                                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                                 xml:space="preserve" class="u-svg-content"
                                                                 viewBox="0 0 491.996 491.996" x="0px" y="0px"
@@ -85,11 +87,13 @@
                         <div class="u-layout-row" style="">
                             <div class="u-align-center u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1"
                                 src="" data-image-width="1080" data-image-height="1080">
-                                <div class="u-container-layout u-valign-middle u-container-layout-1" src=""></div>
+                                <div class="u-container-layout u-valign-middle " src="">
+                                    <img src="/football-goalkeeper.jpg" alt="">
+                                </div>
                             </div>
                             <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2"
                                 src="">
-                                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                                <div class="u-container-layout u-valign-middle u-container-layout-2 scrolled">
                                     <h2 class="u-align-center u-text u-text-1">Sample Headline</h2>
                                     <p class="u-align-center u-text u-text-2">Sample text. Lorem ipsum dolor sit amet,
                                         consectetur
@@ -121,7 +125,9 @@
                             </div>
                             <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1"
                                 src="" data-image-width="1080" data-image-height="1080">
-                                <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
+                                <div class="u-container-layout u-valign-middle " src="">
+                                    <img src="/photo2.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,7 +141,9 @@
                         <div class="u-layout-row" style="">
                             <div class="u-align-center u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1"
                                 src="" data-image-width="1080" data-image-height="1080">
-                                <div class="u-container-layout u-valign-middle u-container-layout-1" src=""></div>
+                                <div class="u-container-layout u-valign-middle" src="">
+                                    <img src="/photo3.jpg" alt="">
+                                </div>
                             </div>
                             <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2"
                                 src="">
@@ -155,3 +163,15 @@
         </section>
 
     </div>
+
+    <script>
+        const toScroll = document.querySelector(".toScroll");
+        const scrolled = document.querySelector(".scrolled");
+        console.log(toScroll);
+        console.log(scrolled);
+        toScroll.addEventListener("click", () => {
+            console.log("Clicked");
+            scrolled.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+        })
+
+    </script>
