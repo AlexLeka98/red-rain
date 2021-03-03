@@ -1,0 +1,208 @@
+.u-section-1 {
+    background-image: url("/football-field-night.jpg");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding-bottom:130px;
+    border-bottom:130px solid black;
+  }
+  
+  .u-section-1 .u-sheet-1 {
+    min-height: 596px;
+  }
+  
+  .u-section-1 .u-text-1 {
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 39.6px;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 175px 570px 0 0;
+  }
+  
+  .u-section-1 .u-text-2 {
+    font-weight: 400;
+    font-style: normal;
+    margin: 52px 570px 0 0;
+  }
+  
+  .u-section-1 .u-btn-1 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    background-image: none;
+    border-style: none;
+    margin: 26px 165px 60px auto;
+    padding: 8px 27px 8px 26px;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 491px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      margin-top: -363px;
+    }
+  
+    .u-section-1 .u-text-2 {
+      margin-right: 370px;
+    }
+  
+    .u-section-1 .u-btn-1 {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 376px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      margin-right: 350px;
+    }
+  
+    .u-section-1 .u-text-2 {
+      margin-right: 150px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 282px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      margin-top: -349px;
+      margin-right: 170px;
+    }
+  
+    .u-section-1 .u-text-2 {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 178px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      font-size: 1.5rem;
+      margin-top: -345px;
+      margin-right: 0;
+    }
+  }.u-section-2 {
+    background-image: url("/football-goalkeeper.jpg");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  .u-section-2 .u-sheet-1 {
+    min-height: 489px;
+  }
+  
+  .u-section-2 .u-video-1 {
+    height: 401px;
+    width: 948px;
+    animation-duration: 1000ms;
+    margin: 44px auto;
+  }
+  
+  .u-section-2 .embed-responsive-1 {
+    position: absolute;
+    width: 178%;
+    height: 178%;
+    left: -39%;
+    top: -39%;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-section-2 {
+      background-position: 50% 50%;
+    }
+  
+    .u-section-2 .u-video-1 {
+      width: 940px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-section-2 .u-sheet-1 {
+      min-height: 411px;
+    }
+  
+    .u-section-2 .u-video-1 {
+      height: 323px;
+      width: 720px;
+    }
+  
+    .u-section-2 .embed-responsive-1 {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-section-2 .u-sheet-1 {
+      min-height: 549px;
+    }
+  
+    .u-section-2 .u-video-1 {
+      height: 300px;
+      margin-right: initial;
+      margin-left: initial;
+      width: auto;
+    }
+  
+    .u-section-2 .embed-responsive-1 {
+      width: 178%;
+      height: 178%;
+      left: -39%;
+      top: -39%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-section-2 .u-sheet-1 {
+      min-height: 473px;
+    }
+  
+    .u-section-2 .u-video-1 {
+      height: 190px;
+      width: auto;
+      margin-right: initial;
+      margin-left: initial;
+    }
+  
+    .u-section-2 .embed-responsive-1 {
+      width: 210%;
+      height: 100%;
+      left: -55%;
+      top: 0%;
+    }
+  }.u-section-3 {
+    background-image: none;
+  }
+  
+  .u-section-3 .u-sheet-1 {
+    min-height: 558px;
+  }
+  
+  .u-section-3 .u-text-1 {
+    margin: 60px 0 0;
+  }
+  
+  .u-section-3 .u-btn-1 {
+    border-style: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    background-image: none;
+    margin: 30px auto 60px;
+    padding: 8px 27px 8px 26px;
+  }
