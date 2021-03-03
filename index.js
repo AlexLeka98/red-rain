@@ -36,8 +36,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/events', (req, res) => {
-    res.render('events');
+    res.render('./events/events');
 })
+
+app.get('/event-page', (req, res) => {
+    res.render('./events/event-page');
+})
+
 
 app.get('/sports', (req, res) => {
     res.render('sports');
