@@ -1,5 +1,169 @@
 
 
+*{
+  overflow:hidden;
+}
+
+body{
+  /* background-color:black; */
+}
+
+
+
+
+.section-1{
+  width:100%;
+  height:90vh;
+  margin-top:102px;
+  background-image: url("/football-field-night.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:bottom center;
+}
+
+.section-1 .container-sec-1{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 .container-sec-1 .text-container{
+  height: 80%;
+  width:100%;
+  /* background-color:rgba(105, 105, 105, 0.701); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width:50%;
+  height:50%;
+  margin-left:10%;
+  margin-top:10%;
+  padding:15px 25px 15px 25px;
+  background-color:rgba(105, 105, 105, 0.701);
+  border-radius: 10px; */
+}
+
+
+.section-1 .container-sec-1 .text-container .text{
+  width:40%;
+  min-width:410px;
+  height: 60%;
+  background-color:rgba(0, 0, 0, 0.585);
+  color:white;
+  padding:30px;
+  padding-bottom:50px;
+  margin:50px 0px 0px 50px;
+  border-radius: 20px;
+}
+.section-1 .container-sec-1 .mybtn{
+  width:100%;
+  height:40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.section-1 .container-sec-1 .mybtn button{
+  margin-right:100px;
+  margin-bottom:100px;
+  padding:10px 40px 10px 40px;
+  background-color:rgba(235, 255, 102, 0.884);
+  color:black;
+  font-weight: 500;
+  border-radius: 2px;
+  transition:all 0.2s;
+}
+
+.section-1 .container-sec-1 .mybtn button:hover{
+  cursor:pointer;
+  background-color:rgba(241, 255, 152, 0.884);
+  transform: scale(1.1);
+}
+
+.section-1 .container-sec-1 .mybtn button:active{
+  cursor:pointer;
+  background-color:rgba(241, 255, 152, 0.884);
+  border-color:none;
+  transform: scale(1.1);
+}
+
+@media (max-width: 575px) {
+  .section-1 .container-sec-1 .text-container{
+    align-items: center;
+  }
+
+  .section-1 .container-sec-1 .text-container .text{
+    margin:0;
+    height:60%;
+  }
+
+  .section-1 .container-sec-1 .mybtn{
+    justify-content: center;
+    align-items: center;
+    height:20%;
+  }
+
+  .section-1 .container-sec-1 .mybtn button{
+    margin:0;
+    margin-bottom:60px;
+    
+  }
+
+}
+
+
+
+
+
+
+/* .section-1 .container-sec-1 .text-container .text h1{
+  font-family: 'Font Awesome 5 Pro';
+  font-size:50px;
+  margin:0;
+  width:300px;
+  border-bottom: 1px solid black;
+}
+
+
+.section-1 .container-sec-1 .text p{
+  margin-bottom:0;
+  font-size:15px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .u-section-1 {
     background-image: url("/football-field-night.jpg");
@@ -10,7 +174,7 @@
     padding-bottom:31px;
     border-bottom: 100px solid rgba(0, 0, 0, 0.857);
     margin-top:102px !important;
-    
+    height:90vh;
 }
 
 .u-section-1 .text-container{
@@ -36,6 +200,10 @@
 
 .u-section-1 .u-sheet-1 {
 min-height: 541px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
 }
 
 .u-section-1 .u-text-1 {
@@ -64,15 +232,17 @@ min-height: 541px;
 
   @media (max-width: 1199px) {
     .u-section-1 .u-sheet-1 {
-      min-height: 446px;
+      min-height: 400px;
     }
   
     .u-section-1 .u-text-1 {
       /* margin-top: -363px; */
+      margin-left:50px;
     }
   
     .u-section-1 .u-text-2 {
       margin-right: 370px;
+      margin-left:50px;
     }
   
     .u-section-1 .u-btn-1 {
@@ -90,14 +260,14 @@ min-height: 541px;
     }
   
     .u-section-1 .u-text-2 {
-      margin-right: 150px;
+      margin-right: 165px;
+      font-size:16px;
     }
   }
   
   @media (max-width: 767px) {
     .u-section-1 .u-sheet-1 {
       min-height: 257px;
-      margin-top:193px;
     }
     .u-section-1 .u-sheet-1 h1, .u-section-1 .u-sheet-1 p{
         font-size:10px;
@@ -126,7 +296,7 @@ min-height: 541px;
   
     .u-section-1 .u-text-1 {
       font-size: 1.5rem;
-      /* margin-top: -345px; */
+      margin-top: -5px;
       margin-right: 0;
     }
   }.u-section-2 {

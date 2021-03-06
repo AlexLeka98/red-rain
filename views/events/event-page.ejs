@@ -7,25 +7,30 @@
         <link rel="stylesheet" href="stylesheets/nicepage.css" media="screen">
         <link rel="stylesheet" href="stylesheets/event-page.css" media="screen">
         <script class="u-script" type="text/javascript" src="scripts/nicepage.js" defer=""></script>
-        <meta name="generator" content="Nicepage 3.7.2, nicepage.com">
         <link id="u-theme-google-font" rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+        <script>
+            const stripePublicKey = "<%= stripePublicKey %>"
+        </script>
+        <script src="scripts/event-page.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+
+
     </head>
 
 
-
-    <section class="u-align-left u-border-1 u-border-grey-75 u-clearfix u-image u-lightbox u-parallax u-section-1"
+    <!-- <section class="u-align-left u-border-1 u-border-grey-75 u-clearfix u-image u-lightbox u-parallax u-section-1"
         id="carousel_a197">
         <div class="u-clearfix u-sheet u-sheet-1">
 
-            <!-- <div class="text-container">
+            <div class="text-container">
                 <h1>Football Summer Festival</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos reprehenderit iusto excepturi magni
                     sapiente debitis cumque dolor sit, hic quo officia odit, quas delectus, assumenda incidunt. Officia,
                     dolorem illo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi labore ex veritatis
                     aspernatur, est cum iste sed debitis illum fugiat. Fugit libero ut consequatur neque aspernatur
-                    recusandae voluptate, perferendis iusto?</p> 
-        </div> -->
+                    recusandae voluptate, perferendis iusto?</p>
+            </div>
 
             <h2 class="u-align-left u-text u-text-body-alt-color u-text-1">Football Summer Festival</h2>
             <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">Pharetra vel turpis nunc
@@ -43,6 +48,23 @@
             <a href="https://nicepage.com/web-design"
                 class="u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-light-1 u-radius-9 u-btn-1">register
                 now!</a>
+        </div>
+    </section> -->
+
+    <section class="section-1">
+        <div class="container-sec-1">
+            <div class="text-container">
+                <div class="text">
+                    <h1>Hello Rose</h1>
+                    <p>Please start eating before 3pm !!!! <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Est
+                        dolores sequi, amet, fuga aliquid reiciendis maxime saepe qui tempore quisquam dignissimos porro
+                        reprehenderit at?</p>
+                </div>
+
+            </div>
+            <div class="mybtn"><button>Register Now!</button></div>
+
         </div>
     </section>
     <section class="u-align-center u-clearfix u-image u-parallax u-section-2" id="sec-d85b" data-image-width="1980"
@@ -93,7 +115,7 @@
     </section>
     <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="sec-314d">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <h1 class="u-text u-text-1">Design Perfection</h1>
+            <h1 class="u-text u-text-1">Do you want to take part ? </h1>
             <p class="u-text u-text-2">We’re a small creative design studio based in New York, working with adventurous
                 clients and providing Creative Concept, Branding, Graphic Design, Art Direction and Digital
                 Communication
@@ -107,22 +129,49 @@
 
 
 
+    <!-- <button class="checkout-button"
+        style="width:200px;background-color:rgb(125, 125, 255); padding:20px;margin-top:200px;">20$</button>
+    <button class="checkout-button"
+        style="width:200px;background-color:rgb(125, 125, 255); padding:20px;margin-top:200px;">50$</button> -->
 
-    <button>One person</button>
-    <button>Whole team</button>
+    <script type="text/javascript">
+        // Create an instance of the Stripe object with your publishable API key
+        var stripe = Stripe('pk_test_51IHdaaEZLf0IIvPkNgEJIyW5AcNNfPCh4QdoLCRgamSOQQjnY3GgEN3h0Xro4seobh53OTMMo79lZKyOm4KzVa7200ThEjXw0y');
 
-    <div style="height:900px;">
+        var checkoutButton = document.querySelectorAll('.checkout-button');
+        checkoutButton.forEach((button) => {
+            button.addEventListener('click', function () {
+                let price = button.innerHTML;
+                price = price.slice(0, price.length - 1);
+                console.log(price);
+                fetch('/create-checkout-session', {
+                    method: 'POST',
+                    body: JSON.stringify({ value: price * 100 })
+                })
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (session) {
+                        return stripe.redirectToCheckout({ sessionId: session.id });
+                    })
+                    .then(function (result) {
+                        if (result.error) {
+                            alert(result.error.message);
+                        }
+                    })
+                    .catch(function (error) {
+                        console.error('Error:', error);
+                    });
+            });
+        })
+    </script>
+
+
+
+    <h1>Here will be the cartels!!</h1>
+
+    <div style="height:100px;">
     </div>
-
-
-
-
-
-
-
-
-
-
 
 
 

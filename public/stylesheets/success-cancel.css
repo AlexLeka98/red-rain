@@ -1,0 +1,89 @@
+body{
+    background-color:#111;
+}
+
+.container{
+    margin-top:102px;
+    width:100%;
+    background-color:rgb(192, 192, 253);
+    height:calc(102vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url('/football-field-night.jpg');
+    background-size:cover;
+    background-position: 0px -60px;
+    padding-bottom:10px;
+}
+
+h1 {
+    color: #f5d000;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+}
+i {
+    color: #f5d000;
+    font-size: 100px;
+    line-height: 200px;
+    margin-left:-15px;
+}
+.card {
+    background: white;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(65, 72, 0);
+}
+
+a:active{
+    color:rgb(0, 0, 0);
+}
+
+
+button{
+    margin-top:40px;
+    font-size:20px;
+    padding:15px 50px 15px 50px;
+    border:1px solid #f5d000;
+    background-color:transparent;
+}
+
+button:hover{
+    background-color:#f5d00098;
+    border-color:transparent;
+    cursor:pointer;
+}
+
+button:active{
+    background-color:#ffe96c98;
+    border:1px solid transparent;
+}
+
+button:focus{
+    border:1px solid #f5d000;
+}
+
+footer{padding-top:55px;}
+
+
+
+.contain{
+    background-color:red;
+    height:200px;
+    width:100%;
+}

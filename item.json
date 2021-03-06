@@ -1,0 +1,14 @@
+{
+    "football": [
+        {
+            "id": 1,
+            "name": "individual",
+            "price": 2000
+        },
+        {
+            "id": 2,
+            "name": "team",
+            "price": 20000
+        }
+    ]
+}

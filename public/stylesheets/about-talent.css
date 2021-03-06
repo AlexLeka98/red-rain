@@ -324,6 +324,7 @@ body {
 .myGallery {
     font-size: 1rem;
     overflow: hidden;
+    margin-top:40px;
 }
 
 .zoomImage{
@@ -334,4 +335,13 @@ body {
 
 .whole-container {
   margin-bottom: 0px;
+}
+
+.wrapper h1{
+  margin-left:37%;
+  text-align: center;
+  display: inline-block;
+  background-color:rgb(167, 167, 167);
+  padding:24px;
+  border-radius: 8px;
 }
