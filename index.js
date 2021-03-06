@@ -117,6 +117,7 @@ app.get("/about-talent", (req, res) => {
     res.render("./talent-agency/about-talent")
 })
 
+
 const port = process.env.PORT || 3000;
 
 app.listen(3000, () => {
