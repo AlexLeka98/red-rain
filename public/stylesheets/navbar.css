@@ -328,24 +328,31 @@ html{
   transition: all 0.4s ease-in-out;
 }
 
+.buttons{
+  width:100%;
+  position:absolute;
+  /* display: flex; */
+  top:45vh;
+  z-index:2;
+}
+
 .buttons button#next {
-  position: absolute;
-  top: 13%;
-  right: 15px;
+  float:right;
+  margin-right:10px;
 }
 
 .buttons button#prev {
-  position: absolute;
-  top: 13%;
-  left: 15px;
+  float:left;
+  margin-left:10px;
 }
+
+
 
 .buttons button {
   border: 2px solid #fff;
   background-color: #c3c3c37d;
   color: #fff;
   cursor: pointer;
-  /* padding: 13px 15px; */
   width:50px;
   height:50px;
   border-radius: 50%;
@@ -355,7 +362,7 @@ html{
 .buttons button:hover {
   background-color: #fff;
   color: #333;
-}
+} 
 
 .fas{
   margin-top:5px;
@@ -443,22 +450,22 @@ html{
 .slide:first-child {
   background-image:url("/football-field-night.jpg");
   background-size: cover;
-  background-position-y: center;
+  background-position: center center;
 }
 .slide:nth-child(2) {
   background-image:url("/entertainment.jpg");
   background-size: cover;
-  background-position-y: center;
+  background-position: center center;
 }
 .slide:nth-child(3) {
   background-image:url("/education.jpg");
   background-size: cover;
-  background-position-y: center;
+  background-position: center center;
 }
 .slide:nth-child(4) {
   background-image:url("/photoshoot-talent-agency.jpg");
   background-size: cover;
-  background-position-y: center;
+  background-position: center center;
 }
 
 
